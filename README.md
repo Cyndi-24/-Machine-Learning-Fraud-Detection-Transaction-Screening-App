@@ -12,8 +12,6 @@ This project develops an end-to-end machine learning solution for identifying po
 
 A key challenge was the severe class imbalance in the dataset, where fraudulent transactions represented only a small proportion of all transactions. For this reason, model evaluation focused on fraud-class precision, recall, F1-score, confusion matrix, and ROC-AUC rather than relying on accuracy alone.
 
-Three classification models — Logistic Regression, XGBoost, and Random Forest — were evaluated before selecting the final model for deployment.
-
 ## Project Objective
 
 The objective of this project was to develop and evaluate a machine learning model capable of identifying potentially fraudulent transactions while maintaining a useful balance between detecting fraud and limiting false alerts.
@@ -34,14 +32,6 @@ A model like this can support banks, fintech companies, payment platforms, e-com
 - Support faster, more consistent transaction-risk screening
 
 The trade-off between precision and recall is especially important in practice. Higher recall helps detect more fraudulent transactions, while higher precision reduces the number of legitimate transactions incorrectly flagged for review.
-
-## Analytical Questions
-
-1. Can transaction characteristics be used to distinguish fraudulent transactions from legitimate transactions?
-2. Which transaction characteristics contribute most strongly to fraud prediction?
-3. How do fraudulent transactions differ from legitimate transactions?
-4. Which classification model provides the most balanced performance for detecting the minority fraud class?
-5. Can the selected model be deployed through an interactive application for screening new transactions
 
 ## Tools Used
 
