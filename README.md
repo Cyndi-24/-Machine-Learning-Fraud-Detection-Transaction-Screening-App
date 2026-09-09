@@ -44,15 +44,6 @@ The trade-off between precision and recall is especially important in practice. 
 - **VS Code** — Streamlit application development and testing
 - **Streamlit** — interactive fraud prediction application
 - **GitHub** — project documentation, version control, and deployment repository
-
-## Approach
-
-1. Cleaned and prepared the transaction data, removed non-predictive identifiers, and engineered time and transaction-direction features.
-2. Split the data into training and test sets before fitting preprocessing objects to reduce data leakage.
-3. One-hot encoded categorical variables and scaled numerical variables.
-4. Addressed the severe class imbalance and evaluated Logistic Regression, XGBoost, and Random Forest using fraud-class precision, recall, F1-score, confusion matrix, and ROC-AUC.
-5. Compared model performance, interpreted feature importance, and investigated the transaction patterns associated with fraud.
-6. Selected the best-performing model, saved the required preprocessing objects, and deployed the final solution through Streamlit.
    
 ## Data Cleaning & Preparation
 
