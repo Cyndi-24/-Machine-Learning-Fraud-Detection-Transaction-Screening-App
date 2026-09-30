@@ -10,8 +10,6 @@ _________________
 
 This project develops an end-to-end machine learning solution for identifying potentially fraudulent financial transactions. It covers transaction data preparation, exploratory analysis, feature engineering, model development and comparison, model interpretation, and deployment through an interactive Streamlit application.
 
-A key challenge was the severe class imbalance in the dataset, where fraudulent transactions represented only a small proportion of all transactions. For this reason, model evaluation focused on fraud-class precision, recall, F1-score, confusion matrix, and ROC-AUC rather than relying on accuracy alone.
-
 ## Project Objective
 
 The objective of this project was to develop and evaluate a machine learning model capable of identifying potentially fraudulent transactions while maintaining a useful balance between detecting fraud and limiting false alerts.
@@ -30,8 +28,6 @@ A model like this can support banks, fintech companies, payment platforms, e-com
 - Reduce potential financial losses from fraudulent activity
 - Limit unnecessary reviews of legitimate transactions
 - Support faster, more consistent transaction-risk screening
-
-The trade-off between precision and recall is especially important in practice. Higher recall helps detect more fraudulent transactions, while higher precision reduces the number of legitimate transactions incorrectly flagged for review.
 
 ## Tools Used
 
@@ -118,8 +114,6 @@ For this reason, Random Forest was selected as the final model for deployment. I
 Feature importance analysis showed that **Transaction Value** was the strongest predictor in the Random Forest model, contributing roughly 49% of total feature importance.
 
 Fraudulent transactions also showed a much higher median transaction value than legitimate transactions — approximately **650,000 versus 1,000**. However, the presence of lower-value fraud cases showed that transaction value alone was not enough to classify fraud reliably.
-
-Other predictive signals came from product, provider, transaction timing, category, channel, pricing strategy, and transaction direction. This suggests that fraud detection depended on a combination of transaction characteristics rather than a single rule.
 
 The analysis therefore supports a pattern-based approach to fraud detection, where multiple features are considered together before a transaction is classified.
 
